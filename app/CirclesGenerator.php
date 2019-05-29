@@ -55,7 +55,7 @@ class CirclesGenerator
 
     private function getRandomColor()
     {
-        return self::COLORS[rand(0, $this->amountColorIndexes)];
+        return self::COLORS[rand(0, $this->amountColorIndexes - 1)];
     }
 
     private function getRandomCircleCenter($imageWidth, $imageHeight, $circleRadius)

@@ -6,10 +6,6 @@ html, body, .wrapper {
     background-color: #b9c783;
 }
 
-.wrapper > section {
-    margin: 10px 0 0 0;
-}
-
 .slider {
     text-align: center;
 }
@@ -29,5 +25,4 @@ html, body, .wrapper {
 }
 .slider .slider-previews li.current {
     border: 5px solid rgba(0,0,0,0.2);
-    margin: 0;
 }

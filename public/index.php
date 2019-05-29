@@ -11,6 +11,7 @@
 <body>
 <div class="wrapper">
   <form id="image-generator" action="handler.php" method="get">
+    <input type="hidden" name="form" value="image-generator">
     <div class="input-item">
       <label for="img-width">Image width</label>
       <input id="img-width" type="text" name="width">
@@ -36,6 +37,10 @@
     <div class="button-wrapper">
       <input class="button" type="submit" value="Generate">
     </div>
+  </form>
+  <form id="image-slider" action="handler.php" method="get">
+    <input class="slider-button button" type="submit" value="Show slider">
+    <input type="hidden" name="form" value="slider">
   </form>
 </div>
 <script src="js/script.js"></script>

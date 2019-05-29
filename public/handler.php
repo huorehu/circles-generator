@@ -20,8 +20,11 @@ switch ($_GET['form']) {
     case 'slider':
         require 'slider.php';
         break;
+    case 'images':
+        $imgArr = array_values(array_diff(array_reverse(scandir('img')), ['.', '..']));
+        echo json_encode($imgArr, JSON_PRETTY_PRINT);
+        header('Content-type: application/json');
+        break;
     default:
         http_response_code(404);
 }
-
-

@@ -12,7 +12,7 @@
   <section>
     <div id="slider" class="slider">
       <div class="slider-current">
-        <img src="img/5ceee8ea1e2a6.png" alt="0">
+        <img src="img/5ceee8ea1e2a6.png" width="500" height="500" alt="0">
       </div>
       <ul class="slider-previews"></ul>
     </div>

@@ -74,11 +74,42 @@ function removeError(input, correct) {
 
 function isAllFieldsCorrect() {
     let correct = true;
+    let width = 0;
+    let height = 0;
+    let radius = 0;
 
     inputs.forEach(input => {
         if (!input.correct) {
             correct = false;
             showError(input.element, input.correct);
+        }
+
+        switch (input.name) {
+            case 'width':
+                width = input.element.value;
+                break;
+            case 'height':
+                height = input.element.value;
+                break;
+            case 'radius':
+                radius = input.element.value;
+        }
+    });
+
+    inputs.forEach(input => {
+        switch (input.name) {
+            case 'width':
+                if (width / 2 < radius) {
+                    showError(input.element, input.correct);
+                    correct = false;
+                }
+
+                break;
+            case 'height':
+                if (height / 2 < radius) {
+                    showError(input.element, input.correct);
+                    correct = false;
+                }
         }
     });
 

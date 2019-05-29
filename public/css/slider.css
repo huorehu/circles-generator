@@ -1,0 +1,33 @@
+html, body, .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #b9c783;
+}
+
+.wrapper > section {
+    margin: 10px 0 0 0;
+}
+
+.slider {
+    text-align: center;
+}
+.slider .slider-indicators {
+    padding: 0;
+}
+.slider .slider-previews li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 1rem;
+    vertical-align: middle;
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+.slider .slider-previews li img {
+    display: block;
+}
+.slider .slider-previews li.current {
+    border: 5px solid rgba(0,0,0,0.2);
+    margin: 0;
+}

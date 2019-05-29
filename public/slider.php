@@ -18,6 +18,10 @@
     </div>
   </section>
 </div>
+<form id="main" action="handler.php" method="get">
+  <input class="main-button button" type="submit" value="Main page">
+  <input type="hidden" name="form" value="main">
+</form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="js/slider.js"></script>
 </body>

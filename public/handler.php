@@ -25,6 +25,8 @@ switch ($_GET['form']) {
         echo json_encode($imgArr, JSON_PRETTY_PRINT);
         header('Content-type: application/json');
         break;
+    case 'main':
+        require 'index.php';
     default:
         http_response_code(404);
 }

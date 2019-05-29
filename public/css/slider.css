@@ -26,3 +26,29 @@ html, body, .wrapper {
 .slider .slider-previews li.current {
     border: 5px solid rgba(0,0,0,0.2);
 }
+
+.button {
+    background-color: #635960;
+    border: none;
+    color: #fffecd;
+    min-height: 35px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.main-button {
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    right: 70px;
+}

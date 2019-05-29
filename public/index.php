@@ -13,17 +13,18 @@
   <form id="image-generator" action="handler.php" method="get">
     <div class="input-item">
       <label for="img-width">Image width</label>
-      <input id="img-width" type="text">
+      <input id="img-width" type="text" name="width">
     </div>
     <div class="input-item">
       <label for="img-height">Image height</label>
-      <input id="img-height" type="text">
+      <input id="img-height" type="text" name="height">
     </div>
     <div class="input-item">
       <label for="circle-radius">Circle radius</label>
-      <input id="circle-radius" type="text">
+      <input id="circle-radius" type="text" name="radius">
     </div>
     <div class="input-item">
+      <span>Amount circles</span>
       <select name="amount" id="amount-circles">
         <option value="-1">Select number</option>
         <option value="5">5</option>
@@ -37,5 +38,6 @@
     </div>
   </form>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>

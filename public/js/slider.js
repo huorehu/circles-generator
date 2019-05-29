@@ -9,7 +9,6 @@ $.ajax({
     async: false
 }).done(data => {
     images = data;
-    console.log(typeof images);
 });
 
 const RIGHT = 39;

@@ -1,7 +1,9 @@
 <?php
 
-use app\CirclesGenerator;
-use app\ImageWriter;
+use app\{
+    CirclesGenerator,
+    ImageWriter
+};
 
 if ($imageWidth === -1 || $imageHeight === -1 || $circleRadius === -1 || $amountCircles === -1
     || !$validator->validateRadius($imageWidth, $imageHeight, $circleRadius)) {
